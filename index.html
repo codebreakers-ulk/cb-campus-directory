@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Resource Directory | Codebreakers</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <h1>Campus Resource Directory</h1>
+      <p class="subtitle">A curated guide to academic, tech, and student essentials.</p>
+      
+      <div class="search-box">
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="Search resources by name, category, or tag..."
+          autocomplete="off"
+        >
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="stats-bar">
+      <span id="resourceCount">Showing 0 resources</span>
+    </div>
+
+    <!-- Dynamic Resource Grid -->
+    <section class="resource-grid" id="resourceGrid">
+      <!-- Cards render dynamically from js/app.js -->
+    </section>
+
+    <!-- Empty State -->
+    <div class="empty-state hidden" id="emptyState">
+      <p>No resources found matching your search.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Maintained by <strong>Codebreakers</strong>. Contributions welcome!</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
